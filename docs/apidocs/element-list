@@ -1,0 +1,14 @@
+com.github.antzGames.gdx.ode4j.math
+com.github.antzGames.gdx.ode4j.ode
+com.github.antzGames.gdx.ode4j.ode.internal
+com.github.antzGames.gdx.ode4j.ode.internal.aabbtree
+com.github.antzGames.gdx.ode4j.ode.internal.cpp4j.java
+com.github.antzGames.gdx.ode4j.ode.internal.gimpact
+com.github.antzGames.gdx.ode4j.ode.internal.joints
+com.github.antzGames.gdx.ode4j.ode.internal.libccd
+com.github.antzGames.gdx.ode4j.ode.internal.processmem
+com.github.antzGames.gdx.ode4j.ode.internal.ragdoll
+com.github.antzGames.gdx.ode4j.ode.internal.stuff
+com.github.antzGames.gdx.ode4j.ode.ragdoll
+com.github.antzGames.gdx.ode4j.ode.threading
+com.github.antzGames.gdx.ode4j.ode.threading.task
