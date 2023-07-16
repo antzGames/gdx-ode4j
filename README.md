@@ -56,7 +56,7 @@ https://github.com/antzGames/ode4j-GWT-Compatible-libGDX/assets/10563814/b0db87e
 
 Ode4j has its own math classes similar to libGDX's Vector3, Matrix3, Matrix4, and Quaternion.
 
-I added a math utility class called [Ode2GDXMathUtils](https://github.com/antzGames/gdx-ode4j/blob/master/core/src/main/java/com/github/antzGames/gdx/ode4j/Ode2GdxMathUtils.java).  Use the following methods to create the libGDX Quaternion from ode4j's QuanternionC or DMatrix3C:
+I added a math utility class called [Ode2GDXMathUtils](https://github.com/antzGames/gdx-ode4j/blob/master/src/main/java/com/github/antzGames/gdx/ode4j/Ode2GdxMathUtils.java).  Use the following methods to create the libGDX Quaternion from ode4j's QuanternionC or DMatrix3C:
 
 ```java
     Quaternion q1 = Ode2GdxMathUtils.getGdxQuaternion(odeQuaternion);  
