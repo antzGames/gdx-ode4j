@@ -5,9 +5,9 @@ version 0.4.1 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/od
 
 ## How to use in your project
 
-You can use the `master-SNAPSHOT` as I do not plan to release different versions, only bug fixes. 
+You can use the `master-SNAPSHOT` tag as I do not plan to release different versions, only bug fixes. 
 
-And add the dependency in your core project:
+Add the dependency in your core project:
 
 ```gradle
 project(":core") {
@@ -28,7 +28,7 @@ project(":html") {
     dependencies {
         ...
         implementation "com.github.antzGames:gdx-ode4j:master-SNAPSHOT:sources"
-        implementation "com.github.tommyettinger:formic:$formicVersion:sources"
+        implementation "com.github.tommyettinger:formic:0.1.4:sources"
     }
 }
 ```
@@ -36,8 +36,12 @@ project(":html") {
 and lastly add this to your `GdxDefinition.gwt.xml` file:
 
 ```xml
+<module>
+    ...
     <inherits name="gdx_ode4j" />
     <inherits name="formic" />
+    ...
+</module>
 ```
 
 ## Runtime examples
@@ -48,12 +52,12 @@ See the samples project for examples.
 
 Ode4j has its own math classes similar to libGDX's Vector3, Matrix3, Matrix4, and Quaternion.
 
-I added a math utility class called [Ode2GDXMathUtils](https://github.com/antzGames/ode4j-GWT-Compatible-libGDX/blob/master/core/src/main/java/com/antz/ode4libGDX/util/Ode2GdxMathUtils.java).  Use the following methods to create the libGDX Quaternion from ode4j's QuanternionC or DMatrix3C:
+I added a math utility class called [Ode2GDXMathUtils](https://github.com/antzGames/gdx-ode4j/blob/master/core/src/main/java/com/antz/ode4libGDX/util/Ode2GdxMathUtils.java).  Use the following methods to create the libGDX Quaternion from ode4j's QuanternionC or DMatrix3C:
 
 ```java
-  Quaternion q1 = Ode2GdxMathUtils.getGdxQuaternion(odeQuaternion);  
-  Quaternion q2 = Ode2GdxMathUtils.getGdxQuaternion(odeMat3);
-  ```
+    Quaternion q1 = Ode2GdxMathUtils.getGdxQuaternion(odeQuaternion);  
+    Quaternion q2 = Ode2GdxMathUtils.getGdxQuaternion(odeMat3);
+```
 
 In addition ode4j uses double and not float like most of libGDX's math classes.
 
