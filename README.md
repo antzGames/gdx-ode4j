@@ -1,4 +1,4 @@
-# libGDX Open Dynamics Engine (ODE4J) physics engine LIBRARY
+# libGDX Open Dynamics Engine (ODE4J) - physics engine LIBRARY
 
 This is a ODE4J library compatible with all libGDX backends, including GWT.  It is based on
 version 0.4.2 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
