@@ -81,3 +81,41 @@ There is also the [old website](https://tzaeschke.github.io/ode4j-old/), includi
 
 Here is a [Youtube video](https://www.youtube.com/watch?v=ENlpu_Jjp3Q) of a list of games that used ODE from 2002-2015.  You will be suprised how many of your favorite games used this physcis libary.
 
+## ODE, ode4j and other Licenses
+
+### Licensing & Copyright for ODE and ode4j
+
+This library is under copyright by Tilmann Zäschke (Java port), Russell L. Smith (copyright holder of the original ODE code), Francisco Leon (copyright holder of the original GIMPACT code) and Daniel Fiser (copyright holder of the original libccd).
+
+This library is free software; you can redistribute it and/or modify it under the terms of EITHER:
+(1) The GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version. The text of the GNU Lesser General Public License is included with this library in the file LICENSE.TXT.
+(2) The BSD-style license that is included with this library in the files ODE-LICENSE-BSD.TXT and ODE4j-LICENSE-BSD.TXT.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the files LICENSE.TXT, ODE-LICENSE-BSD.TXT, GIMPACT-LICENSE-BSD.TXT, GIMPACT-LICENSE-LGPL.TXT, ODE4J-LICENSE-BSD.TXT and LIBCCD_BSD-LICENSE for more details.
+
+The LICENSE.TXT, ODE-LICENSE-BSD.TXT, GIMPACT-LICENSE-BSD.TXT, GIMPACT-LICENSE-LGPL.TXT, LIBCCD_BSD-LICENSE and ODE4J-LICENSE-BSD.TXT files are available in the source code.
+
+## Legal
+
+ode4j:
+Copyright (c) 2009-2017 Tilmann Zäschke ode4j@gmx.de.
+All rights reserved.
+
+Like the original ODE, ode4j is licensed under LGPL v2.1 and BSD 3-clause. Choose whichever license suits your needs.
+
+### ode4j contains Java ports of the following software
+
+[ODE/OpenDE](http://www.ode.org/):
+Copyright  (c) 2001,2002 Russell L. Smith
+All rights reserved.
+
+GIMPACT (part of ODE/OpenDE):
+Copyright of GIMPACT (c) 2006 Francisco Leon. C.C. 80087371.
+email: projectileman(AT)yahoo.com
+
+[LIBCCD](https://github.com/danfis/libccd):
+Copyright (c) 2010 Daniel Fiser <danfis(AT)danfis.cz>;
+3-clause BSD License
+
+[Turbulenz Engine](https://github.com/turbulenz/turbulenz_engine):
+Copyright (c) 2009-2014 Turbulenz Limited; MIT License
