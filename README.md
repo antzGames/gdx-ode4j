@@ -46,7 +46,9 @@ and lastly add this to your `GdxDefinition.gwt.xml` file:
 
 ## Runtime examples
 
-See the samples project for examples.
+See the samples [project](https://github.com/antzGames/gdx-ode4j-examples) for examples.
+
+Or play with them on [itch.io](https://antzgames.itch.io/physics-in-a-browser).
 
 https://github.com/antzGames/ode4j-GWT-Compatible-libGDX/assets/10563814/b0db87e1-d548-43d6-bb89-02aa4ae2b21d
 
