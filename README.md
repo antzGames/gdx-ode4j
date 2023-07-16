@@ -48,6 +48,8 @@ and lastly add this to your `GdxDefinition.gwt.xml` file:
 
 See the samples project for examples.
 
+https://github.com/antzGames/ode4j-GWT-Compatible-libGDX/assets/10563814/b0db87e1-d548-43d6-bb89-02aa4ae2b21d
+
 ## Math classes
 
 Ode4j has its own math classes similar to libGDX's Vector3, Matrix3, Matrix4, and Quaternion.
