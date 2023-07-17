@@ -50,7 +50,7 @@ Some examples can be found in my [gdx-ode4j-examples](https://github.com/antzGam
 
 Or play with them on [itch.io](https://antzgames.itch.io/physics-in-a-browser).
 
-https://github.com/antzGames/ode4j-GWT-Compatible-libGDX/assets/10563814/b0db87e1-d548-43d6-bb89-02aa4ae2b21d
+https://github.com/antzGames/gdx-ode4j/assets/10563814/bc46a9a9-f2e8-414b-bfde-8be6ea54e46b
 
 ## Math classes
 
