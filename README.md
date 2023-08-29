@@ -3,9 +3,12 @@
 This is a ODE4J library compatible with all libGDX backends, including GWT.  It is based on
 version 0.4.2 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
 
-## How to use in your project
+If you want to use ode4j only on libGDX Desktop/Android/iOS backends then I recommend you use [odej4](https://github.com/tzaeschke/ode4j) directly.  
+However if you want cross platform support (i.e include GWT support) then you need to use this library.
 
-You can use the `master-SNAPSHOT` tag as I do not plan to release different versions, only bug fixes. 
+Currently this is the only 3D physics engine option for GWT on libGDX.
+
+## How to use in your project
 
 Add the dependency in your core project:
 
@@ -64,6 +67,51 @@ I added a math utility class called [Ode2GDXMathUtils](https://github.com/antzGa
 ```
 
 In addition ode4j uses double and not float like most of libGDX's math classes.
+
+## Limitations
+
+### Fixed timesteps
+
+ODE was made to work with fixed timesteps.  Do not pass `Gdx.graphics.getDeltaTime()` to `world.quickStep()`.
+
+The following online [ODE HOWTO entry](https://ode.org/wiki/index.php/HOWTO_fixed_vs_variable_timestep) discusses how to incorporate this limitation into a game.
+
+Using `vsync=true` in your game launch configuration helps, but some people might run at 60hz, while others might run at 50Hz, 75Hz, 144Hz.
+
+Below is some example code that you can use to force physics to only update at a fixed interval (timestep).
+
+```java
+public static final float MIN_FRAME_LENGTH = 1f/60f;
+        ...
+
+@Override
+public void render(float deltaTime){
+        timeSinceLastRender+=deltaTime;
+
+        // Only compute 60Hz for physics
+        if (timeSinceLastRender >= MIN_FRAME_LENGTH) {
+            odePhysicsSystem.update(timeSinceLastRender);   // This is my custom class
+            timeSinceLastRender -= MIN_FRAME_LENGTH;
+
+            if(timeSinceLastRender > MIN_FRAME_LENGTH)
+                timeSinceLastRender = 0;
+        }
+
+        ...
+}
+```
+
+### Performance
+
+I have tried jBullet, PhysX and ODE physics engines with libGDX.  ODE is the slowest, and the reason being is that in ODE everything is using double precision.
+
+### Known Issues
+
+ODE4J 0.4.2 has some Triangle Mesh (TriMesh) collision detection issues.
+
+The owner of ODE4J has fixed them in ODE4J 0.5.0.
+
+I will have to update this library to use ODE4J 0.5.0 which is planned.
 
 ## Where to get ODE/ode4j documentation and help
 
