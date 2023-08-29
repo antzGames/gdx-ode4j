@@ -77,8 +77,9 @@ ODE was made to work with fixed timesteps.  Do not pass `Gdx.graphics.getDeltaTi
 The following online [ODE HOWTO entry](https://ode.org/wiki/index.php/HOWTO_fixed_vs_variable_timestep) discusses how to incorporate this limitation into a game.
 
 Using `vsync=true` in your game launch configuration helps, but some people might run at 60hz, while others might run at 50Hz, 75Hz, 144Hz.
+This means that objects will fall/interact at different speeds on these different refresh rates.
 
-Below is some example code that you can use to force physics to only update at a fixed interval (timestep).
+Below is example code that you can use to force physics to only update at a fixed interval (timestep).
 
 ```java
 public static final float MIN_FRAME_LENGTH = 1f/60f;
@@ -86,11 +87,11 @@ public static final float MIN_FRAME_LENGTH = 1f/60f;
 
 @Override
 public void render(float deltaTime){
-        timeSinceLastRender+=deltaTime;
+        timeSinceLastRender += deltaTime;
 
         // Only compute 60Hz for physics
         if (timeSinceLastRender >= MIN_FRAME_LENGTH) {
-            odePhysicsSystem.update(timeSinceLastRender);   // This is my custom class
+            odePhysicsSystem.update(MIN_FRAME_LENGTH);   // My custom class, which eventaully calls world.quickStep(MIN_FRAME_LENGTH)
             timeSinceLastRender -= MIN_FRAME_LENGTH;
 
             if(timeSinceLastRender > MIN_FRAME_LENGTH)
