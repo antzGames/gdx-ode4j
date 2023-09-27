@@ -5,7 +5,7 @@
 ![image](https://github.com/antzGames/gdx-ode4j/assets/10563814/c59c282d-9198-4066-81b7-0de4e5808f64)
 
 This is a ODE4J library compatible with all libGDX backends, including GWT.  It is based on
-version 0.4.2 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
+version 0.4.1 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
 
 If you want to use ODE4J only on libGDX Desktop/Android/iOS backends then I recommend you use [odej4](https://github.com/tzaeschke/ode4j) directly.  
 However if you want cross platform support (i.e include GWT support) then you need to use this library.
