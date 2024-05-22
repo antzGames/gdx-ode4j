@@ -7,7 +7,7 @@
 This is a ODE4J library compatible with all libGDX backends, including GWT.  It is based on
 version 0.4.1 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
 
-Version ODE4J 0.5.1 can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
+Version ODE4J 0.5.3 (also GWT compatible) can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
 
 If you want to use ODE4J only on libGDX Desktop/Android/iOS backends then I recommend you use [odej4](https://github.com/tzaeschke/ode4j) directly.  
 However if you want cross platform support (i.e include GWT support) then you need to use this library.
@@ -118,7 +118,9 @@ ODE4J 0.4.2 has some Triangle Mesh (TriMesh) collision detection issues.
 
 The owner of ODE4J has fixed them in ODE4J 0.5.0.
 
-Version ODE4J 0.5.1 can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
+List of fixes/changes between 0.4.2 and 0.5.3 can be found [here](https://github.com/tzaeschke/ode4j/blob/master/CHANGELOG.md).
+
+Version ODE4J 0.5.3 can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
 
 ## Where to get ODE/ode4j documentation and help
 
@@ -140,11 +142,11 @@ Here is a [Youtube video](https://www.youtube.com/watch?v=ENlpu_Jjp3Q) of a list
 
 ## Versions
 
-Both ODE4J `v0.4.1` and `v0.5.1` have been ported.
+ODE4J `v0.4.1` and `v0.5.3` have been ported.  Both are GWT compatible.  
 
 Version v0.4.1 GitHub repo: [https://github.com/antzGames/gdx-ode4j](https://github.com/antzGames/gdx-ode4j)
 
-Version v0.5.1 GitHub repo: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
+Version v0.5.3 GitHub repo: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
 
 ## Where has ODE4J libGDX version been used?
 
