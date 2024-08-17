@@ -2,6 +2,7 @@ package com.github.antzGames.gdx.ode4j;
 
 import com.badlogic.gdx.math.Quaternion;
 import com.github.antzGames.gdx.ode4j.math.DMatrix3C;
+import com.github.antzGames.gdx.ode4j.math.DQuaternion;
 import com.github.antzGames.gdx.ode4j.math.DQuaternionC;
 
 public class Ode2GdxMathUtils {
@@ -21,6 +22,7 @@ public class Ode2GdxMathUtils {
     private static float S;
 
     private static Quaternion q = new Quaternion();
+    private static DQuaternion dq = new DQuaternion();
 
     //          0, 1, 2, 3
     // ODE      w, x, y ,z
@@ -28,6 +30,11 @@ public class Ode2GdxMathUtils {
     public static Quaternion getGdxQuaternion(DQuaternionC odeQ){
         q.set((float)odeQ.get1(), (float)odeQ.get2(), (float)odeQ.get3(), (float) odeQ.get0());
         return q;
+    }
+
+    public static DQuaternion getOde4jQuaternion(Quaternion quaternion) {
+        dq.set(quaternion.w, quaternion.x, quaternion.y, quaternion.z);
+        return dq;
     }
 
     // From https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/
