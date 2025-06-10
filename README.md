@@ -16,7 +16,7 @@ Currently this is the only 3D physics engine option for GWT on libGDX.
 
 ## Before you invest time with ODE4J
 
-ODE4J is 100% Java.  It also uses Double precision for everything.  But most importantly it does not use `SIMD` (Single Instruction, Multiple Data) which all modern physics engine use.
+ODE4J is 100% Java.  It also uses double precision for everything.  But most importantly it does not use `SIMD` (Single Instruction, Multiple Data) which all modern physics engine use.
 
 This means that ODE4J is extremely slow compared to Jolt, PhysX, and even Bullet.
 
