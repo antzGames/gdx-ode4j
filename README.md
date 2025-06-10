@@ -14,6 +14,12 @@ However if you want cross platform support (i.e include GWT support) then you ne
 
 Currently this is the only 3D physics engine option for GWT on libGDX.
 
+## Before you invest time with ODE4J
+
+ODE4J is 100% Java.  It also uses Double precision for everything.  But most importantly it does not use `SIMD` (Single Instruction, Multiple Data) which all modern physics engine use.
+
+This means that ODE3J is extremely slow compared to Jolt, PhysX, and even Bullet.
+
 ## How to use in your project
 
 Add the dependency in your core project:
