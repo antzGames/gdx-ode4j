@@ -4,19 +4,18 @@
 
 ![image](https://github.com/antzGames/gdx-ode4j/assets/10563814/c59c282d-9198-4066-81b7-0de4e5808f64)
 
+This repo is an old version of ODE4J (4.1), and will be removed by the end of **summer of 2025**.
+
+# Please use version `ODE4J 0.5.4` (also GWT compatible) that can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
+
 This is a ODE4J library compatible with all libGDX backends, including GWT.  It is based on
 version 0.4.1 of [Open Dynamics Engine for Java](https://github.com/tzaeschke/ode4j).
 
-Version ODE4J 0.5.4 (also GWT compatible) can be found here: [https://github.com/antzGames/ode4j](https://github.com/antzGames/ode4j)
-
-If you want to use ODE4J only on libGDX Desktop/Android/iOS backends then I recommend you use [odej4](https://github.com/tzaeschke/ode4j) directly.  
-However if you want cross platform support (i.e include GWT support) then you need to use this library.
-
-Currently this is the only 3D physics engine option for GWT on libGDX.
+Currently this is the only 3D physics engine option for GWT backend on libGDX.
 
 ## Before you invest time with ODE4J
 
-ODE4J is 100% Java.  It also uses double precision for everything.  But most importantly it does not use `SIMD` (Single Instruction, Multiple Data) which all modern physics engine use.
+ODE4J is 100% Java.  It uses double precision for everything.  But most importantly it does not use `SIMD` (Single Instruction, Multiple Data) which all modern physics engine use.
 
 This means that ODE4J is extremely slow compared to Jolt, PhysX, and even Bullet.
 
@@ -116,7 +115,7 @@ public void render(float deltaTime){
 
 ### Performance
 
-I have tried jBullet, PhysX and ODE physics engines with libGDX.  ODE is the slowest, and the reason being is that in ODE everything is using double precision.
+I have tried jBullet, PhysX and ODE physics engines with libGDX.  ODE is the slowest, because it is 100% Java and doesnot use any SIMD optimizations.  In addition it uses double precision for everything.
 
 ### Known Issues
 
