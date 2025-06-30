@@ -115,7 +115,7 @@ public void render(float deltaTime){
 
 ### Performance
 
-I have tried jBullet, PhysX and ODE physics engines with libGDX.  ODE is the slowest, because it is 100% Java and doesnot use any SIMD optimizations.  In addition it uses double precision for everything.
+I have tried jBullet, PhysX and ODE physics engines with libGDX.  ODE is the slowest, because it is 100% Java and  does not use `SIMD` (Single Instruction, Multiple Data) optimizations.  In addition it uses double precision for everything.
 
 ### Known Issues
 
